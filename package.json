@@ -2,7 +2,7 @@
   "name": "localwp-shells",
   "displayName": "LocalWP Site Shell Launcher",
   "description": "A simple extension that provides easy way to open Local sites shell in VSCode",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.89.0"
   },
