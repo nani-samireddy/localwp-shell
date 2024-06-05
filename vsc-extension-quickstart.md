@@ -4,24 +4,34 @@
 
 ## Features
 
-- **List Sites**: Easily list all available site shells within your specified folder path.
-- **Quick Pick Selection**: Select a script to run from the listed site shells.
+- **List Sites**: Easily list all available LocalWP site shells within your specified folder path.
+- **Quick Pick Selection**: Select a site from the listed sites and opens that site's shell in the vscode terminal.
 - **Terminal Integration**: Opens the selected site shell in a new terminal window within VSCode.
 
 ## Installation
 
-1. Open Visual Studio Code.
-2. Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window.
-3. Search for "LocalWP Shells" in the Extensions view search box.
-4. Click on the "Install" button next to the "LocalWP Shells" extension.
-5. Once installed, the extension is ready to use.
+Install through Visual Studio Code Marketplace or by searching for `LocalWP Shells` in the Extensions view search box.
+
+[Visual Studio Code Marketplace - LocalWP Shells](https://marketplace.visualstudio.com/items?itemName=nanisamireddy.localwp-shells)
+
+You can also install the extension by Launching VS Code Quick Open (Ctrl/Cmd + P), pasting the following command, and pressing enter.
+
+```
+ext install nanisamireddy.localwp-shells
+```
 
 ## Usage
 
-1. Configure the folder path where your LocalWP site shells are located in VSCode settings (`localWPShells.folderPath`).
-2. Open the command palette (Ctrl/Cmd + Shift + P) and search for "Local WP: List Sites" or use the shortcut provided by the extension.
+1. Configure the folder path where your LocalWP site shells are located in VSCode settings (`localWPShells.folderPath`). If you are on MacOS, the default path is set to `/Users/<username>/Library/Application Support/Local/ssh-entry`.
+2. Open the command palette (Ctrl/Cmd + Shift + P) and search for `Local WP: List Sites` or use the shortcut provided by the extension.
 3. Select a site shell script from the listed options.
 4. The selected site shell will open in a new terminal window within VSCode.
+
+## Screenshots
+
+![Command Palette](./screenshots/1.png)
+![List Sites](./screenshots/2.png)
+![Select Site](./screenshots/3.png)
 
 ## Configuration
 
