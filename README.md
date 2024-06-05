@@ -12,7 +12,7 @@
 
 1. Clone this repository to your local machine.
    ```bash
-   git clone https://github.com/your-username/localwp-shells.git
+   git clone https://github.com/nani-samireddy/localwp-shell
    ```
 2. Open Visual Studio Code.
 3. Open the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window.
@@ -42,7 +42,7 @@ The extension provides a configuration option to set the folder path where your 
 
 1. Clone this repository.
    ```bash
-   git clone https://github.com/your-username/localwp-shells.git
+   git clone https://github.com/nani-samireddy/localwp-shell
    ```
 2. Navigate to the cloned repository folder.
    ```bash

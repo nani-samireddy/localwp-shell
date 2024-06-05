@@ -38,7 +38,7 @@ The extension provides a configuration option to set the folder path where your 
 - **Version**: 0.0.1
 - **Author**: Nani Samireddy
 - **Description**: A simple extension that provides an easy way to open LocalWP site shells in VSCode.
-- **GitHub Repository**: [Link to GitHub repository if available]
+- **GitHub Repository**: https://github.com/nani-samireddy/localwp-shell
 
 ## Feedback and Contributions
 
