@@ -1,0 +1,58 @@
+{
+  "name": "localwp-shells",
+  "displayName": "LocalWP Site Shell Launcher",
+  "description": "A simple extension that provides easy way to open Local sites shell in VSCode",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.89.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "localwp-shells.listSites",
+        "title": "Local WP: List Sites"
+      }
+    ],
+    "activitybar": [
+      {
+        "id": "localWPShells",
+        "title": "Local Terminal",
+        "icon": "resources/icons8-terminal-30.png"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "properties": {
+        "localWPShells.folderPath": {
+          "type": "string",
+          "default": "",
+          "description": "The folder path to search for .sh files"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.89.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@typescript-eslint/eslint-plugin": "^7.11.0",
+    "@typescript-eslint/parser": "^7.11.0",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.5",
+    "@vscode/test-cli": "^0.0.9",
+    "@vscode/test-electron": "^2.4.0"
+  }
+}
