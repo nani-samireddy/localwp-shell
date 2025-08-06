@@ -61,7 +61,9 @@ export function activate(context: vscode.ExtensionContext) {
           const terminal = vscode.window.createTerminal(
             `Run ${selected.label}`
           );
-          const escapedPath = `'${selected.description.replace(
+          // Remove backslashes before spaces since we're using quoted strings
+          const pathWithoutSpaceEscapes = selected.description.replace(/\\ /g, ' ');
+          const escapedPath = `'${pathWithoutSpaceEscapes.replace(
             /'/g,
             "'\\''"
           )}'`;
